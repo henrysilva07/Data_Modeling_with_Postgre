@@ -4,6 +4,6 @@ Neste projeto, iremos criar um banco de dados no postgre `sparkifydb` para o apl
 
 # Designer do schema e ETL pipeline 
 
-O star schema possui uma tabela fato (songplays)  e 4 tabelas de dimensões (songs, users, artists, time). `Drop', `ĆREATE`, `ÌNSERT' e `SELECT`queries são definidas em `sql_queries.py`. **Create_tables.py** utiliza as funções `create_databse` , `drop_tables`e  `create_tables` para criar o banco de dados sparifydb e suas tabelas. 
+O star schema possui uma tabela fato (songplays)  e 4 tabelas de dimensões (songs, users, artists, time). `Drop', `CREATE`, `INSERT' e `SELECT`queries são definidas em `sql_queries.py`. **Create_tables.py** utiliza as funções `create_databse` , `drop_tables`e  `create_tables` para criar o banco de dados sparifydb e suas tabelas. 
 
 
