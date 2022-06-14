@@ -25,14 +25,11 @@ Push da imagem do container
 
 ```
 docker push henrysilva/postgres-student
-
 ```
-
 Inicializando o container 
 
 ```
 docker run -d --name postgres-servidor -p 5432:5432 henrysilva/postgres-student
-
 ```
 A conecão com o container pode ser realizar por meio dos seguintes parâmetros: 
 `conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=usuario password=1234")`
@@ -41,7 +38,6 @@ Para pausar ou remover o container
 
 ```
 docker stop  postgres-servidor
+
 docker rm  postgres-servidor
-
-
 ```
