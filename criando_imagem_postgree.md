@@ -1,7 +1,5 @@
 # Criado uma imagem de postgree
 
-Create a postgres docker image with user 'student' password 'student'.
-
 
 Crie um  Dockerfile
 
@@ -32,12 +30,12 @@ Crie os arquivos  **Dockerfile** e **init.sql** e execute a imagem no host
 ```{bash}
 docker build -t postgres-student .
 
-docker run -d --name postgres-student -p 5432:5432 postgres-student
+docker run -d --name postgres-servidor -p 5432:5432 postgres-student
 ```
 
 <br>
 
-## Crie a imagem e realize o push para o docker hub  
+## Realizando o login ao docker hub e criando a imagem  
 
 Login
 
@@ -47,34 +45,33 @@ docker login docker.io
 
 <br>
 
-Build image and tag with docker username for relative path
+Criado a imagem 
 
 ```{bash}
-docker build -t postgres-student-image .
-docker tag postgres-student-image onekenken/postgres-student-image
+docker build -t postgres-student .
+docker tag postgres-student henrysilva/postgres-student
 docker login docker.io
-docker push onekenken/postgres-student-image
+docker push henrysilva/postgres-student
 ```
 
 <br>
 
-Pull and run from docker hub retrieved image
+Pull e run a partir do docker hub 
 
 ```{bash}
-docker pull onekenken/postgres-student-image
+docker pull henrysilva/postgres-student
 
-docker run -d --name postgres-student-container -p 5432:5432 onekenken/
+docker run -d --name postgres-servidor -p 5432:5432 henrysilva/postgres-student
 
-postgres-student-image
 ```
 
 <br>
 
-[Image at docker hub](https://hub.docker.com/r/onekenken/postgres-student-image) address.
+[Image at docker hub](https://hub.docker.com/repository/docker/henrysilva/postgres-student) address.
 
 <br>
 
-To rinse and repeat
+Para pausar ou remover o container 
 
 ```{bash}
 docker stop postgres-student-container
