@@ -19,10 +19,8 @@ Para realizar o download da imagem, instale o docker , crie um login e uma senha
 
 ```
 docker login docker .io
-
 ```
 Push da imagem do container 
-
 ```
 docker push henrysilva/postgres-student
 ```
