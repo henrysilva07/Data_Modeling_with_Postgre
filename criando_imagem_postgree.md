@@ -67,7 +67,7 @@ docker run -d --name postgres-servidor -p 5432:5432 henrysilva/postgres-student
 
 <br>
 
-[Image at docker hub](https://hub.docker.com/repository/docker/henrysilva/postgres-student) address.
+[Imagem no docker hub](https://hub.docker.com/repository/docker/henrysilva/postgres-student) address.
 
 <br>
 
