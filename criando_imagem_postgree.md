@@ -11,7 +11,7 @@ COPY init.sql /docker-entrypoint-initdb.d/
 
 <br>
 
-Crie um com as informações do banco   init.sql file
+Crie um arquivo init.sql com as informações do banco    
 
 ```{sql}
 DROP DATABASE IF EXISTS sparkify;
