@@ -1,7 +1,7 @@
 # Comandos para apagar tabelas
 
 song_table_drop = "DROP TABLE IF EXISTS  songs;" 
-artist_table_drop = "DROP TABLE IF EXISTS  artist;"
+artist_table_drop = "DROP TABLE IF EXISTS  artists;"
 user_table_drop = "DROP TABLE IF EXISTS users;"
 time_table_drop = "DROP TABLE IF EXISTS  time;"
 songplay_table_drop ="DROP TABLE IF EXISTS  songplay;"    
