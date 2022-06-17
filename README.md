@@ -51,3 +51,4 @@ docker stop  postgres-servidor
 
 docker rm  postgres-servidor
 ```
+https://github.com/razevedo1994/data-engineering/tree/main/data_modeling/data_modeling_with_postgres
