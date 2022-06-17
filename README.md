@@ -1,6 +1,18 @@
-# Modelagem de dados com Postgre
+# Projeto: Modelagem de dados com Postgre
 
-Neste projeto, iremos criar um banco de dados no postgre `sparkifydb` para o aplicativo de música, Sparkify. O objetivo é modelar o conjunto de dados presentes nos arquivos *Song_data*, que presenta as músicas executadas e nos arquivos *Log_data*, que indica os artistas e as músicas presentes no aplicativo. O schema de dados utilizado foi o star schema para otimizar as queries analíticas. 
+## Motivação do Projeto
+
+Uma startup chamada Sparkify deseja analizar os dados coletados sobre as músicas executadas e os usuários ativos em seu aplicativo de streaming de músicas. Entretanto eles não possuem conhecimento acerca de de manipulação de dados, que estão presentes em arquivos JSON.
+
+Eles necessitam de um engenheiro de dados para criar um ambiente OLAP que permita a otimização de queries analíticas para que seja possível realizar uma análise exploratória desses dados, bem como o desenvolvimento de relatórios.
+
+## Descrição do Projeto 
+
+Este projeto será realizado em três passos:
+  * Criação de um banco Postgree utilizado Docker que será nosso servidor;
+  * Criação de todas as tabelas necessárias para a modelagem do negócio;
+  * Realização do pipeline de dados para carga dos dados.
+
 
 # Designer do schema e ETL pipeline 
 
