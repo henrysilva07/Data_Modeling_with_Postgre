@@ -57,4 +57,4 @@ docker rm  postgres-servidor
 ```
 # Ordem de execução dos arquivos:
 
-Cria-se o servidor utilizando docker, depois é necessário realizar a criação das tabelas () e por fim executa o arquivo **elt.py**
+Cria-se o servidor utilizando docker, depois é necessário realizar a criação das tabelas (**create_tables.py**) e por fim executa o arquivo **elt.py**
