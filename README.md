@@ -2,7 +2,7 @@
 
 ## Motivação do Projeto
 
-Uma startup chamada Sparkify deseja analizar os dados coletados sobre as músicas executadas e os usuários ativos em seu aplicativo de streaming de músicas. Entretanto eles não possuem conhecimento acerca de de manipulação de dados, que estão presentes em arquivos JSON.
+Uma startup chamada Sparkify deseja analizar os dados coletados sobre as músicas executadas e os usuários ativos em seu aplicativo de streaming de músicas. Entretanto eles não possuem conhecimento acerca de manipulação de dados, que estão presentes em arquivos JSON.
 
 Eles necessitam de um engenheiro de dados para criar um ambiente OLAP que permita a otimização de queries analíticas para que seja possível realizar uma análise exploratória desses dados, bem como para fornecer os dados de uma maneira estruturada para os analistas da empresa. Dito isso, cabe ao engenheiro de dados desenvolver toda a insfraestrutura necessária para o ambiente e o pipeline de dados. 
 
@@ -16,7 +16,9 @@ Este projeto será realizado em três passos:
 
 # Designer do schema e ETL pipeline 
 
-O star schema possui uma tabela fato (songplays)  e 4 tabelas de dimensões (songs, users, artists, time). `Drop`, `CREATE`, `INSERT` e `SELECT`queries são definidas em `sql_queries.py`. **Create_tables.py** utiliza as funções `create_databse` , `drop_tables`e  `create_tables` para criar o banco de dados sparifydb e suas tabelas. 
+O banco utilizado para realizar o armazenamento dos dados será um *Postgre* que será criado via docker. O nosso banco irá priorizar queries analícas, por tanto, foi definido que a melhor opção seria criar o nosso modelo utilizando um star schema. 
+
+O nosso star schema possui uma tabela fato (songplays)  e 4 tabelas de dimensões (songs, users, artists, time). `Drop`, `CREATE`, `INSERT` e `SELECT`queries são definidas em `sql_queries.py`. **Create_tables.py** utiliza as funções `create_databse` , `drop_tables`e  `create_tables` para criar o banco de dados sparifydb e suas tabelas. 
 
 ![](diagrama/sparkifydb.png)
 
