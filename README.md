@@ -4,7 +4,7 @@
 
 Uma startup chamada Sparkify deseja analizar os dados coletados sobre as músicas executadas e os usuários ativos em seu aplicativo de streaming de músicas. Entretanto eles não possuem conhecimento acerca de de manipulação de dados, que estão presentes em arquivos JSON.
 
-Eles necessitam de um engenheiro de dados para criar um ambiente OLAP que permita a otimização de queries analíticas para que seja possível realizar uma análise exploratória desses dados, bem como o desenvolvimento de relatórios.
+Eles necessitam de um engenheiro de dados para criar um ambiente OLAP que permita a otimização de queries analíticas para que seja possível realizar uma análise exploratória desses dados, bem como para fornecer os dados de uma maneira estruturada para os analistas da empresa. Dito isso, cabe ao engenheiro de dados desenvolver toda a insfraestrutura necessária para o ambiente e o pipeline de dados. 
 
 ## Descrição do Projeto 
 
